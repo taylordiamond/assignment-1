@@ -1,3 +1,28 @@
 1. mkdir answers
 2. touch answers.txt
 3. nano answers.txt
+4. ~/downloads/envanalysis/assignment-1/assignment-1/answers/ answers.txt
+5. ls -a
+6. use ls and then the absolute path to the directory/files you wish to list
+7. rm is a dangerous command because it deletes files and makes them unrecoverable. An example of unintended consequences resulting from this is that you could accidentally delete a file you did not want to delete, and would then be unable to get it back
+8. mkdir results (while in answers directory)
+9. nano my_script.sh, then I input the code from the assignment sheet
+10. chmod 755 my_script.sh
+11. (from the answers directory) cd ~/downloads/envanalysis/assignment-1/assignment-1/data
+12. wc -w * | sort -n | tail -n 3 | head -n 1
+13. for csv in *.csv
+>do
+> ~/downloads/envanalysis/assignment-1/assignment-1/answers/results/my_script.sh $csv
+>done
+14. multiple commands:
+	1. mkdir unzipped-files
+	2. mv *.zip unzipped-files
+	3. for zip in *.zip
+	>do
+	>unzip $zip
+	>done
+15. for zip in *.zip
+>do
+>rm $zip
+>done
+16. cp *200*.csv ~/downloads/envanalysis/assignment-1/assignment-1/answers/results 
